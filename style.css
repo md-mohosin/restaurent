@@ -57,9 +57,12 @@ nav img {
 }
 
 .order-image-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
     padding-top: 50px;
+    gap: 30px;
+    /* border: 1px solid red; */
 }
 
 .order-image {
@@ -109,8 +112,13 @@ nav img {
         display: none;
     }
 
-    nav img{
+    nav img {
         display: block;
+    }
+
+    .order-image-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
     }
 }
 
@@ -127,5 +135,18 @@ nav img {
 @media (max-width:500px) {
     header {
         height: 300px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav img {
+        display: block;
+    }
+
+    .order-image-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
     }
 }
