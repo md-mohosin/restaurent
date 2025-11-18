@@ -3,13 +3,24 @@ body {
     background-color: white;
 }
 
-.order-section {
+.order-section,
+.form-menu {
     max-width: 1920px;
     width: 80%;
     margin: 0 auto;
     margin-top: 150px;
     /* border: 1px solid red; */
 }
+
+.heading {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    border-top: 2px solid #c4c3c3;
+    border-bottom: 2px solid #c4c3c3;
+}
+
 
 
 header {
@@ -26,10 +37,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
+    right: 0;
+    left: 0;
     top: 0;
     overflow: hidden;
     padding-inline: 20px;
+    z-index: 99;
 }
 
 nav ul {
@@ -47,18 +61,9 @@ nav img {
 }
 
 
-.heading {
-    width: 250px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    border-top: 2px solid #c4c3c3;
-    border-bottom: 2px solid #c4c3c3;
-}
-
 .order-image-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
     padding-top: 50px;
     gap: 30px;
@@ -78,8 +83,35 @@ nav img {
     font-size: 20px;
 }
 
+.menu-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    place-items: center;
+    padding-top: 50px;
+}
 
+.menu-card img {
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
 
+.menu-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-card p {
+    color: rgb(124, 123, 123);
+}
+
+.menu-card h4 {
+    color: #BF8C15;
+}
 
 
 
@@ -116,9 +148,13 @@ nav img {
         display: block;
     }
 
-    .order-image-container{
-        grid-template-columns: repeat(2,1fr);
+    .order-image-container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+
+    .menu-card-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -145,8 +181,30 @@ nav img {
         display: block;
     }
 
-    .order-image-container{
-        grid-template-columns: repeat(1,1fr);
+    .order-image-container {
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
+
+    .menu-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .menu-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu-card {
+        flex-direction: column;
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .menu-card h2 {
+        font-size: 20px;
+    }
+
 }
