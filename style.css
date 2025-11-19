@@ -121,7 +121,9 @@ nav img {
     gap: 15px;
 }
 
-.menu-card p {
+.menu-card p,
+footer p,
+.chef-card-container p {
     color: rgb(124, 123, 123);
 }
 
@@ -140,7 +142,6 @@ nav img {
 }
 
 .chef-card-container {
-    /* display: grid; grid-template-columns: repeat(4,1fr); place-items: center; gap: 30px; */
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -152,6 +153,22 @@ nav img {
     width: 350px;
     background-color: #F3F3F3;
 }
+
+.featured-section {
+    background-image: url('./images/featured.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 700px;
+    margin-top: 190px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
 
 .footer-section {
     height: 300px;
@@ -289,7 +306,7 @@ nav img {
         flex: 100%;
     }
 
-    .footer-section{
+    .footer-section {
         flex-direction: column;
     }
 }
