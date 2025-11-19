@@ -30,7 +30,6 @@ button {
     border: none;
     border-bottom: 2px solid #BF8C15;
     border-radius: 7px;
-    margin-top: 40px;
 }
 
 button:hover {
@@ -139,12 +138,30 @@ nav img {
     font-size: 35px;
 }
 
+.chef-card-container{
+    /* display: grid; grid-template-columns: repeat(4,1fr); place-items: center; gap: 30px; */
+    display: flex;justify-content: center;gap: 30px;flex-wrap: wrap;margin-top: 50px;
+}
+
+.chef-card{
+    width: 350px;
+    background-color: #F3F3F3;
+}
 
 
 
 
 
 
+
+
+
+
+@media (min-width: 1201px) and (max-width:1900px) {
+/* .chef-card-container{
+         grid-template-columns: repeat(2, 1fr);
+    } */
+}
 
 
 
@@ -153,6 +170,11 @@ nav img {
     header {
         height: 640px;
     }
+
+    /* .chef-card-container{
+         grid-template-columns: repeat(2, 1fr);
+    } */
+     
 }
 
 
@@ -185,6 +207,10 @@ nav img {
 
     .call-us {
         font-size: 25px;
+    }
+
+    .chef-card{
+        flex: 40%;
     }
 }
 
@@ -252,5 +278,9 @@ nav img {
     .call-us {
         font-size: 12px;
         height: 150px;
+    }
+
+     .chef-card{
+        flex: 100%;
     }
 }
