@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: white;
@@ -167,7 +171,14 @@ footer p,
     gap: 30px;
 }
 
+.featured-section img {
+    width: 450px;
+    height: 300px;
+}
 
+.featured-text {
+    width: 30%;
+}
 
 
 .footer-section {
@@ -192,11 +203,6 @@ footer p,
     header {
         height: 640px;
     }
-
-    /* .chef-card-container{
-         grid-template-columns: repeat(2, 1fr);
-    } */
-
 }
 
 
@@ -229,6 +235,20 @@ footer p,
 
     .call-us {
         font-size: 25px;
+    }
+
+    .featured-section {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .featured-section img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .featured-text {
+        width: 70%;
     }
 
     .chef-card {
@@ -304,6 +324,20 @@ footer p,
 
     .chef-card {
         flex: 100%;
+    }
+
+    .featured-section {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .featured-section img {
+        width: 280px;
+        height: 180px;
+    }
+
+    .featured-text {
+        width: 90%;
     }
 
     .footer-section {
